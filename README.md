@@ -4,11 +4,11 @@ Multiclass classification task comparing two ML algorithms on a dataset of 1100 
 
 ## Problem
 
-Classify samples into one of four classes (0, 1, 2, 3) using supervised learning. The dataset is imbalanced — class 1 is the most frequent, class 3 the rarest. SMOTE was applied to handle class imbalance.
+Classify samples into one of four classes (0, 1, 2, 3) using supervised learning. The dataset is imbalanced: class 1 is the most frequent and class 3 the rarest. SMOTE was applied to handle class imbalance.
 
 ## Models & Results
 
-Both models were tuned using `RandomizedSearchCV` with 5-fold cross-validation.
+Both models were tuned using `RandomizedSearchCV` with 5-fold cross validation.
 
 | Model | Best CV F1 (macro) | Test Accuracy |
 |---|---|---|
@@ -25,4 +25,4 @@ Random Forest significantly outperforms Logistic Regression on this dataset, ach
 
 ## Stack
 
-Python 3.11 · scikit-learn · pandas · numpy · imbalanced-learn · matplotlib · seaborn
+Python · scikit-learn · pandas · numpy · imbalanced-learn · matplotlib · seaborn
